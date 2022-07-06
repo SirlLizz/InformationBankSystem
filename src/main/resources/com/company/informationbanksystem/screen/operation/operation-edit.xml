@@ -36,9 +36,9 @@
                             <action id="entityClear" type="entity_clear"/>
                         </actions>
                     </entityPicker>
-                    <textField id="typeField" property="type"/>
-                    <textField id="sumField" property="sum"/>
-                    <dateField id="dateField" property="date"/>
+                    <comboBox id="typeComboBox" property="type"/>
+                    <currencyField id="sumField" property="sum"/>
+                    <datePicker id="dateField" property="date"/>
                     <textField id="categoryField" property="category"/>
                     <textField id="commentField" property="comment"/>
                 </column>

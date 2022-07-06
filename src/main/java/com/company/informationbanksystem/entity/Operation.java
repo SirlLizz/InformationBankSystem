@@ -32,9 +32,9 @@ public class Operation {
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     private Account account;
 
-    @Column(name = "TYPE_", nullable = false)
     @NotNull
-    private Integer type;
+    @Column(name = "TYPE_", nullable = false)
+    private String type;
 
     @Column(name = "SUM_", nullable = false)
     @NotNull
@@ -45,9 +45,9 @@ public class Operation {
     @NotNull
     private Date date;
 
-    @Column(name = "CATEGORY", nullable = false)
     @NotNull
-    private Integer category;
+    @Column(name = "CATEGORY", nullable = false)
+    private String category;
 
     @Column(name = "COMMENT_", nullable = false)
     @NotNull
@@ -84,20 +84,28 @@ public class Operation {
     @Version
     private Integer version;
 
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getType() {
+        return type;
+    }
+
     public String getComment() {
         return comment;
     }
 
     public void setComment(String comment) {
         this.comment = comment;
-    }
-
-    public Integer getCategory() {
-        return category;
-    }
-
-    public void setCategory(Integer category) {
-        this.category = category;
     }
 
     public Date getDate() {
@@ -114,14 +122,6 @@ public class Operation {
 
     public void setSum(Long sum) {
         this.sum = sum;
-    }
-
-    public Integer getType() {
-        return type;
-    }
-
-    public void setType(Integer type) {
-        this.type = type;
     }
 
     public Account getAccount() {

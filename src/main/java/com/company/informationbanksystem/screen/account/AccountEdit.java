@@ -20,9 +20,6 @@ public class AccountEdit extends StandardEditor<Account> {
     @Autowired
     protected ComboBox<String> currencyComboBox;
 
-    @Autowired
-    protected CurrencyField currencyField;
-
     @Subscribe
     protected void onInit(InitEvent event) {
         List<String> options = Lists.newArrayList(
@@ -33,11 +30,6 @@ public class AccountEdit extends StandardEditor<Account> {
                 "RUB", "THB", "TWD", "UAH", "USD",
                 "XAF", "XOF", "XPF", "ZAR", "ZWL");
         currencyComboBox.setOptionsList(options);
-        currencyComboBox.setEditable(false);
-
-        currencyComboBox.setEnterPressHandler(enterPressEvent -> {
-            currencyField.setCurrency(enterPressEvent.getText());
-        });
 
     }
 }
