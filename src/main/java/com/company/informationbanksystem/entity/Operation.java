@@ -16,7 +16,7 @@ import java.util.Date;
 import java.util.UUID;
 
 @JmixEntity
-@Table(name = "OPERATION", indexes = {
+@Table(name = "OPERATION_", indexes = {
         @Index(name = "IDX_OPERATION_ACCOUNT_ID", columnList = "ACCOUNT_ID")
 })
 @Entity

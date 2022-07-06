@@ -4,6 +4,10 @@
     <menu id="application" caption="msg://com.company.informationbanksystem/menu.application" insertBefore="administration">
         <item screen="User.browse" caption="msg://com.company.informationbanksystem.screen.user/UserBrowse.caption"/>
         <item screen="themeSettingsScreen" caption="msg://io.jmix.ui.app.themesettings/themeSettings.caption"/>
+        <item screen="Account.browse"
+              caption="msg://com.company.informationbanksystem.screen.account/accountBrowse.menu"/>
+        <item screen="Operation.browse"
+              caption="msg://com.company.informationbanksystem.screen.operation/operationBrowse.menu"/>
     </menu>
 
 </menu-config>

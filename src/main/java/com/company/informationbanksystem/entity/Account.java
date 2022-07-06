@@ -17,7 +17,7 @@ import java.util.Date;
 import java.util.UUID;
 
 @JmixEntity
-@Table(name = "ACCOUNT")
+@Table(name = "ACCOUNT_")
 @Entity
 public class Account {
     @JmixGeneratedValue
