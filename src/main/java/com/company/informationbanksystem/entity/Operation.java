@@ -49,8 +49,7 @@ public class Operation {
     @Column(name = "CATEGORY", nullable = false)
     private String category;
 
-    @Column(name = "COMMENT_", nullable = false)
-    @NotNull
+    @Column(name = "COMMENT_")
     private String comment;
 
     @DeletedBy

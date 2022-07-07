@@ -25,6 +25,9 @@ public class Account {
     @Id
     private UUID id;
 
+    @Column(name = "ARCHIVE")
+    private Boolean archive;
+
     @CreatedBy
     @Column(name = "CREATED_BY")
     private String createdBy;
@@ -65,6 +68,14 @@ public class Account {
     @NotNull
     @Column(name = "FUNDS", nullable = false)
     private Double funds;
+
+    public Boolean getArchive() {
+        return archive;
+    }
+
+    public void setArchive(Boolean archive) {
+        this.archive = archive;
+    }
 
     public Double getFunds() {
         return funds;

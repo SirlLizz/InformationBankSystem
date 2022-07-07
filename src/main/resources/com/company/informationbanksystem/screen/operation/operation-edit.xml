@@ -38,8 +38,10 @@
                     </entityPicker>
                     <comboBox id="typeComboBox" property="type"/>
                     <currencyField id="sumField" property="sum"/>
-                    <datePicker id="dateField" property="date"/>
-                    <textField id="categoryField" property="category"/>
+                    <datePicker id="dateField"
+                                property="date"
+                                datatype="date"/>
+                    <comboBox id="categoryComboBox" property="category"/>
                     <textField id="commentField" property="comment"/>
                 </column>
             </form>

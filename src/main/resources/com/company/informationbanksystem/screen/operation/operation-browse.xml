@@ -44,11 +44,12 @@
                 <action id="remove" type="remove"/>
             </actions>
             <columns>
+                <column id="account"/>
                 <column id="type"/>
                 <column id="sum"/>
                 <column id="date"/>
                 <column id="category"/>
-                <column id="comment"/>
+                <column id="comment"  maxTextLength="15"/>
             </columns>
             <simplePagination/>
             <buttonsPanel id="buttonsPanel"

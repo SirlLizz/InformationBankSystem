@@ -37,13 +37,15 @@
         </filter>
         <groupTable id="accountsTable"
                     width="100%"
-                    dataContainer="accountsDc">
+                    dataContainer="accountsDc"
+                    editable="true">
             <actions>
                 <action id="create" type="create"/>
                 <action id="edit" type="edit"/>
                 <action id="remove" type="remove"/>
             </actions>
             <columns>
+                <column id="archive" editable="true"/>
                 <column id="name"/>
                 <column id="currency"/>
                 <column id="funds"/>
