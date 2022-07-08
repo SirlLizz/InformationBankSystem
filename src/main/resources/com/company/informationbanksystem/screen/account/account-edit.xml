@@ -5,8 +5,13 @@
     <data>
         <instance id="accountDc"
                   class="com.company.informationbanksystem.entity.Account">
-            <fetchPlan extends="_base"/>
+            <fetchPlan extends="_base">
+                <property name="operationsTable" fetchPlan="_base">
+                    <property name="account" fetchPlan="_base"/>
+                </property>
+            </fetchPlan>
             <loader/>
+            <collection id="operationsDc" property="operationsTable"/>
         </instance>
         <collection id="allCurrencyDc" class="com.company.informationbanksystem.entity.Account">
             <fetchPlan extends="_base"/>
@@ -15,33 +20,54 @@
             </loader>
         </collection>
     </data>
-    <facets>
-        <dataLoadCoordinator auto="true"/>
-        <screenSettings id="settingsFacet" auto="true"/>
-    </facets>
-    <actions>
-        <action id="windowCommitAndClose" caption="msg:///actions.Ok"
-                icon="EDITOR_OK"
-                primary="true"
-                shortcut="${COMMIT_SHORTCUT}"/>
-        <action id="windowClose"
-                caption="msg:///actions.Close"
-                icon="EDITOR_CANCEL"/>
-    </actions>
-    <dialogMode height="600"
-                width="800"/>
-    <layout spacing="true" expand="editActions">
-        <form id="form" dataContainer="accountDc">
-            <column width="350px">
-                <textField id="nameField" property="name"/>
-                <comboBox id="currencyComboBox"
-                           property="currency"/>
-                <currencyField id="fundsField" property="funds"/>
-            </column>
-        </form>
-        <hbox id="editActions" spacing="true">
-            <button id="commitAndCloseBtn" action="windowCommitAndClose"/>
-            <button id="closeBtn" action="windowClose"/>
-        </hbox>
-    </layout>
+<facets>
+    <dataLoadCoordinator auto="true"/>
+    <screenSettings id="settingsFacet" auto="true"/>
+</facets>
+<actions>
+    <action id="windowCommitAndClose" caption="msg:///actions.Ok"
+            icon="EDITOR_OK"
+            primary="true"
+            shortcut="${COMMIT_SHORTCUT}"/>
+    <action id="windowClose"
+            caption="msg:///actions.Close"
+            icon="EDITOR_CANCEL"/>
+</actions>
+<dialogMode height="600"
+            width="800"/>
+<layout spacing="true" expand="editActions">
+    <form id="form" dataContainer="accountDc">
+        <column width="350px">
+            <textField id="nameField" property="name"/>
+            <comboBox id="currencyComboBox"
+                      property="currency"/>
+            <currencyField id="fundsField" property="funds"/>
+        </column>
+    </form>
+    <groupBox id="operationsBox">
+        <table id="operationsTable" dataContainer="operationsDc" width="100%" height="200px">
+            <actions>
+                <action id="create" type="create"/>
+                <action id="edit" type="edit"/>
+                <action id="remove" type="remove"/>
+            </actions>
+            <columns>
+                <column id="type"/>
+                <column id="sum"/>
+                <column id="date"/>
+                <column id="category"/>
+                <column id="comment"  maxTextLength="15"/>
+            </columns>
+            <buttonsPanel>
+                <button action="operationsTable.create"/>
+                <button action="operationsTable.edit"/>
+                <button action="operationsTable.remove"/>
+            </buttonsPanel>
+        </table>
+    </groupBox>
+    <hbox id="editActions" spacing="true">
+        <button id="commitAndCloseBtn" action="windowCommitAndClose"/>
+        <button id="closeBtn" action="windowClose"/>
+    </hbox>
+</layout>
 </window>

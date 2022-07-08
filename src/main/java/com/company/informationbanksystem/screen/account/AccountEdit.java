@@ -1,7 +1,6 @@
 package com.company.informationbanksystem.screen.account;
 
 import io.jmix.ui.component.ComboBox;
-import io.jmix.ui.component.CurrencyField;
 import io.jmix.ui.screen.*;
 import com.company.informationbanksystem.entity.Account;
 import org.springframework.beans.factory.annotation.Autowired;

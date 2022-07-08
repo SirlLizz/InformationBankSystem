@@ -1,9 +1,13 @@
 package com.company.informationbanksystem.entity;
 
+import io.jmix.core.DeletePolicy;
 import io.jmix.core.annotation.DeletedBy;
 import io.jmix.core.annotation.DeletedDate;
 import io.jmix.core.entity.annotation.CaseConversion;
 import io.jmix.core.entity.annotation.JmixGeneratedValue;
+import io.jmix.core.entity.annotation.OnDelete;
+import io.jmix.core.entity.annotation.OnDeleteInverse;
+import io.jmix.core.metamodel.annotation.Composition;
 import io.jmix.core.metamodel.annotation.InstanceName;
 import io.jmix.core.metamodel.annotation.JmixEntity;
 import org.springframework.data.annotation.CreatedBy;
@@ -14,6 +18,7 @@ import org.springframework.data.annotation.LastModifiedDate;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.Date;
+import java.util.List;
 import java.util.UUID;
 
 @JmixEntity
@@ -24,6 +29,12 @@ public class Account {
     @Column(name = "ID", nullable = false)
     @Id
     private UUID id;
+
+    @OnDeleteInverse(DeletePolicy.UNLINK)
+    @Composition
+    @OnDelete(DeletePolicy.CASCADE)
+    @OneToMany(mappedBy = "account")
+    private List<Operation> operationsTable;
 
     @Column(name = "ARCHIVE")
     private Boolean archive;
@@ -68,6 +79,14 @@ public class Account {
     @NotNull
     @Column(name = "FUNDS", nullable = false)
     private Double funds;
+
+    public List<Operation> getOperationsTable() {
+        return operationsTable;
+    }
+
+    public void setOperationsTable(List<Operation> operationsTable) {
+        this.operationsTable = operationsTable;
+    }
 
     public Boolean getArchive() {
         return archive;

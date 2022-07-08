@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <window xmlns="http://jmix.io/schema/ui/window"
-        xmlns:c="http://jmix.io/schema/ui/jpql-condition"
         caption="msg://accountBrowse.caption"
         focusComponent="accountsTable">
     <data readOnly="true">
         <collection id="accountsDc"
                     class="com.company.informationbanksystem.entity.Account">
-            <fetchPlan extends="_base"/>
+            <fetchPlan extends="_base">
+                <property name="operationsTable" fetchPlan="_base">
+                    <property name="account" fetchPlan="_base"/>
+                </property>
+            </fetchPlan>
+            <collection id="operationsDc" property="operationsTable"/>
             <loader id="accountsDl">
                 <query>
                     <![CDATA[select e from Account e]]>
                 </query>
             </loader>
         </collection>
+
     </data>
     <facets>
         <dataLoadCoordinator auto="true"/>
@@ -30,34 +35,65 @@
     </actions>
     <dialogMode height="600"
                 width="800"/>
-    <layout expand="accountsTable" spacing="true">
-        <filter id="filter"
-                dataLoader="accountsDl">
-            <properties include=".*"/>
-        </filter>
-        <groupTable id="accountsTable"
-                    width="100%"
-                    dataContainer="accountsDc"
-                    editable="true">
-            <actions>
-                <action id="create" type="create"/>
-                <action id="edit" type="edit"/>
-                <action id="remove" type="remove"/>
-            </actions>
-            <columns>
-                <column id="archive" editable="true"/>
-                <column id="name"/>
-                <column id="currency"/>
-                <column id="funds"/>
-            </columns>
-            <simplePagination/>
-            <buttonsPanel id="buttonsPanel"
-                          alwaysVisible="true">
-                <button id="createBtn" action="accountsTable.create"/>
-                <button id="editBtn" action="accountsTable.edit"/>
-                <button id="removeBtn" action="accountsTable.remove"/>
-            </buttonsPanel>
-        </groupTable>
+    <layout>
+        <split id="split" height="100%" orientation="horizontal" reversePosition="true" width="100%">
+            <vbox id="lookupBox" height="100%" expand="accountsTable" margin="false,true,false,false" spacing="true">
+                <filter id="accountsFilter"
+                        dataLoader="accountsDl">
+                    <properties include=".*"/>
+                </filter>
+                <groupTable id="accountsTable"
+                            width="100%"
+                            dataContainer="accountsDc">
+                    <actions>
+                        <action id="create" type="create"/>
+                        <action id="edit" type="edit"/>
+                        <action id="remove" type="remove"/>
+                    </actions>
+                    <columns>
+                        <column id="archive"/>
+                        <column id="name"/>
+                        <column id="currency"/>
+                        <column id="funds"/>
+                    </columns>
+                    <simplePagination/>
+                    <buttonsPanel id="buttonsPanel"
+                                  alwaysVisible="true">
+                        <button id="createBtn" action="accountsTable.create"/>
+                        <button id="editBtn" action="accountsTable.edit"/>
+                        <button id="removeBtn" action="accountsTable.remove"/>
+                    </buttonsPanel>
+                </groupTable>
+            </vbox>
+            <vbox id="editBox" height="100%" expand="operationsTable" margin="false,false,false,true" spacing="true">
+                <filter id="operationsFilter"
+                        dataLoader="accountsDl">
+                    <properties include=".*"/>
+                </filter>
+                <groupTable id="operationsTable" dataContainer="operationsDc"
+                            width="100%">
+                    <actions>
+                        <action id="create" type="create"/>
+                        <action id="edit" type="edit"/>
+                        <action id="remove" type="remove"/>
+                    </actions>
+                    <columns>
+                        <column id="type"/>
+                        <column id="sum"/>
+                        <column id="date"/>
+                        <column id="category"/>
+                        <column id="comment"  maxTextLength="15"/>
+                    </columns>
+                    <simplePagination/>
+                    <buttonsPanel id="operationButtonsPanel"
+                                  alwaysVisible="true">
+                        <button id="operationCreateBtn" action="operationsTable.create"/>
+                        <button id="operationEditBtn" action="operationsTable.edit"/>
+                        <button id="operationRemoveBtn" action="operationsTable.remove"/>
+                    </buttonsPanel>
+                </groupTable>
+            </vbox>
+        </split>
         <hbox id="lookupActions" spacing="true" visible="false">
             <button action="lookupSelectAction"/>
             <button action="lookupCancelAction"/>
