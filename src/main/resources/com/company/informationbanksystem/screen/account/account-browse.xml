@@ -66,6 +66,11 @@
             <vbox id="editBox" height="100%" expand="operationsTable" margin="false,false,false,true" spacing="true">
                 <groupTable id="operationsTable" dataContainer="operationsDc"
                             width="100%">
+                    <actions>
+                        <action id="create" type="create"/>
+                        <action id="edit" type="edit"/>
+                        <action id="remove" type="remove"/>
+                    </actions>
                     <columns>
                         <column id="type"/>
                         <column id="sum"/>
@@ -73,6 +78,12 @@
                         <column id="category"/>
                         <column id="comment"  maxTextLength="15"/>
                     </columns>
+                    <buttonsPanel id="accButtonsPanel"
+                                  alwaysVisible="true">
+                        <button id="accCreateBtn" action="operationsTable.create"/>
+                        <button id="accEditBtn" action="operationsTable.edit"/>
+                        <button id="accRemoveBtn" action="operationsTable.remove"/>
+                    </buttonsPanel>
                 </groupTable>
             </vbox>
         </split>
