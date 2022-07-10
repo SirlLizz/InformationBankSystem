@@ -1,6 +1,9 @@
 package com.company.informationbanksystem.screen.account;
 
+import io.jmix.core.Metadata;
+import io.jmix.ui.component.CheckBox;
 import io.jmix.ui.component.ComboBox;
+import io.jmix.ui.model.InstanceContainer;
 import io.jmix.ui.screen.*;
 import com.company.informationbanksystem.entity.Account;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +24,7 @@ public class AccountEdit extends StandardEditor<Account> {
 
     @Subscribe
     protected void onInit(InitEvent event) {
+
         List<String> options = Lists.newArrayList(
                 "AED", "AFN", "ALL", "AMD", "AUD",
                 "BMD", "BHD", "BIF", "BYR", "CAD",

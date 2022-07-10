@@ -17,7 +17,6 @@
                 </query>
             </loader>
         </collection>
-
     </data>
     <facets>
         <dataLoadCoordinator auto="true"/>
@@ -56,7 +55,6 @@
                         <column id="currency"/>
                         <column id="funds"/>
                     </columns>
-                    <simplePagination/>
                     <buttonsPanel id="buttonsPanel"
                                   alwaysVisible="true">
                         <button id="createBtn" action="accountsTable.create"/>
@@ -66,17 +64,8 @@
                 </groupTable>
             </vbox>
             <vbox id="editBox" height="100%" expand="operationsTable" margin="false,false,false,true" spacing="true">
-                <filter id="operationsFilter"
-                        dataLoader="accountsDl">
-                    <properties include=".*"/>
-                </filter>
                 <groupTable id="operationsTable" dataContainer="operationsDc"
                             width="100%">
-                    <actions>
-                        <action id="create" type="create"/>
-                        <action id="edit" type="edit"/>
-                        <action id="remove" type="remove"/>
-                    </actions>
                     <columns>
                         <column id="type"/>
                         <column id="sum"/>
@@ -84,13 +73,6 @@
                         <column id="category"/>
                         <column id="comment"  maxTextLength="15"/>
                     </columns>
-                    <simplePagination/>
-                    <buttonsPanel id="operationButtonsPanel"
-                                  alwaysVisible="true">
-                        <button id="operationCreateBtn" action="operationsTable.create"/>
-                        <button id="operationEditBtn" action="operationsTable.edit"/>
-                        <button id="operationRemoveBtn" action="operationsTable.remove"/>
-                    </buttonsPanel>
                 </groupTable>
             </vbox>
         </split>
