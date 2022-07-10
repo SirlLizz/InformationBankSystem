@@ -38,9 +38,9 @@
                     </entityPicker>
                     <comboBox id="typeComboBox" property="type"/>
                     <currencyField id="sumField" property="sum"/>
-                    <datePicker id="dateField"
-                                property="date"
-                                datatype="date"/>
+                    <dateField id="dateField"
+                               dataContainer="operationDc"
+                                property="date"/>
                     <comboBox id="categoryComboBox" property="category"/>
                     <textField id="commentField" property="comment"/>
                 </column>

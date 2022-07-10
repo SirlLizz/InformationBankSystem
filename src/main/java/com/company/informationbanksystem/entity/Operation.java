@@ -1,8 +1,10 @@
 package com.company.informationbanksystem.entity;
 
+import io.jmix.core.DeletePolicy;
 import io.jmix.core.annotation.DeletedBy;
 import io.jmix.core.annotation.DeletedDate;
 import io.jmix.core.entity.annotation.JmixGeneratedValue;
+import io.jmix.core.entity.annotation.OnDelete;
 import io.jmix.core.metamodel.annotation.InstanceName;
 import io.jmix.core.metamodel.annotation.JmixEntity;
 import org.springframework.data.annotation.CreatedBy;
@@ -16,9 +18,7 @@ import java.util.Date;
 import java.util.UUID;
 
 @JmixEntity
-@Table(name = "OPERATION_", indexes = {
-        @Index(name = "IDX_OPERATION_ACCOUNT_ID", columnList = "ACCOUNT_ID")
-})
+@Table(name = "OPERATION_")
 @Entity
 public class Operation {
     @InstanceName
@@ -27,8 +27,8 @@ public class Operation {
     @Id
     private UUID id;
 
+    @OnDelete(DeletePolicy.CASCADE)
     @JoinColumn(name = "ACCOUNT_ID", nullable = false)
-    @NotNull
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     private Account account;
 

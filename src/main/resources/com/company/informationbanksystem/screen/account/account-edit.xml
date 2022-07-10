@@ -19,6 +19,7 @@
                 <query><![CDATA[select e from Account e]]></query>
             </loader>
         </collection>
+
     </data>
 <facets>
     <dataLoadCoordinator auto="true"/>

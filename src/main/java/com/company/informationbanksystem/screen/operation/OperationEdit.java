@@ -3,7 +3,7 @@ package com.company.informationbanksystem.screen.operation;
 import com.google.common.collect.Lists;
 import io.jmix.core.Metadata;
 import io.jmix.ui.component.ComboBox;
-import io.jmix.ui.component.DatePicker;
+import io.jmix.ui.component.DateField;
 import io.jmix.ui.model.InstanceContainer;
 import io.jmix.ui.screen.*;
 import com.company.informationbanksystem.entity.Operation;
@@ -26,8 +26,23 @@ public class OperationEdit extends StandardEditor<Operation> {
     @Autowired
     protected ComboBox<String> categoryComboBox;
 
+    @Autowired
+    protected DateField<Date> dateField;
+
+    @Autowired
+    protected InstanceContainer<Operation> operationDc;
+
+    @Autowired
+    protected Metadata metadata;
+
     @Subscribe
     protected void onInit(InitEvent event) {
+        dateField.setAutofill(true);
+        dateField.setRangeEnd(new Date());
+
+        Operation operation = metadata.create(Operation.class);
+        operation.setDate(new Date());
+        operationDc.setItem(operation);
 
         List<String> typeOptions = Lists.newArrayList(
                 messageBundle.getMessage("withdrawal"),
@@ -43,5 +58,4 @@ public class OperationEdit extends StandardEditor<Operation> {
                 messageBundle.getMessage("loan"));
         categoryComboBox.setOptionsList(categoryOptions);
     }
-
 }

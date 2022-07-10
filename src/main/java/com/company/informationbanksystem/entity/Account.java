@@ -6,7 +6,6 @@ import io.jmix.core.annotation.DeletedDate;
 import io.jmix.core.entity.annotation.CaseConversion;
 import io.jmix.core.entity.annotation.JmixGeneratedValue;
 import io.jmix.core.entity.annotation.OnDelete;
-import io.jmix.core.entity.annotation.OnDeleteInverse;
 import io.jmix.core.metamodel.annotation.Composition;
 import io.jmix.core.metamodel.annotation.InstanceName;
 import io.jmix.core.metamodel.annotation.JmixEntity;
@@ -30,7 +29,6 @@ public class Account {
     @Id
     private UUID id;
 
-    @OnDeleteInverse(DeletePolicy.UNLINK)
     @Composition
     @OnDelete(DeletePolicy.CASCADE)
     @OneToMany(mappedBy = "account")

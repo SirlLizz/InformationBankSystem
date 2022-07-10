@@ -1,8 +1,10 @@
 package com.company.informationbanksystem.screen.account;
 
 import io.jmix.core.Metadata;
+import io.jmix.ui.Dialogs;
 import io.jmix.ui.component.CheckBox;
 import io.jmix.ui.component.ComboBox;
+import io.jmix.ui.component.HasValue;
 import io.jmix.ui.model.InstanceContainer;
 import io.jmix.ui.screen.*;
 import com.company.informationbanksystem.entity.Account;
@@ -22,6 +24,12 @@ public class AccountEdit extends StandardEditor<Account> {
     @Autowired
     protected ComboBox<String> currencyComboBox;
 
+    @Autowired
+    protected Dialogs dialogs;
+
+    @Autowired
+    private MessageBundle messageBundle;
+
     @Subscribe
     protected void onInit(InitEvent event) {
 
@@ -34,5 +42,15 @@ public class AccountEdit extends StandardEditor<Account> {
                 "XAF", "XOF", "XPF", "ZAR", "ZWL");
         currencyComboBox.setOptionsList(options);
 
+    }
+
+    @Subscribe("archiveCheckBox")
+    public void onArchiveFieldValueChange(HasValue.ValueChangeEvent<Boolean> event) {
+        if(Boolean.TRUE.equals(event.getValue())){
+            dialogs.createMessageDialog()
+                    .withCaption(messageBundle.getMessage("ArchiveCaption"))
+                    .withMessage(messageBundle.getMessage("ArchiveMessage"))
+                    .show();
+        }
     }
 }
