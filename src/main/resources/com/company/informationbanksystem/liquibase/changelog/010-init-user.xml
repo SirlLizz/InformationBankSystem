@@ -46,107 +46,11 @@
             <column name="ACTIVE" valueBoolean="true"/>
         </insert>
 
-        <insert tableName="USER_" dbms="postgresql, mssql, hsqldb">
-            <column name="ID" value="21241ce0-b7db-abdc-ac3c-8c076083c2f0"/>
-            <column name="VERSION" value="1"/>
-            <column name="USERNAME" value="junior"/>
-            <column name="PASSWORD" value="{noop}junior"/>
-            <column name="ACTIVE" valueBoolean="true"/>
-        </insert>
-
-        <insert tableName="USER_" dbms="postgresql, mssql, hsqldb">
-            <column name="ID" value="40e29139-47d3-b56f-d31d-7637fe3cd202"/>
-            <column name="VERSION" value="1"/>
-            <column name="USERNAME" value="middle"/>
-            <column name="PASSWORD" value="{noop}middle"/>
-            <column name="ACTIVE" valueBoolean="true"/>
-        </insert>
-
-        <insert tableName="USER_" dbms="postgresql, mssql, hsqldb">
-            <column name="ID" value="7c378268-b2f7-0a3b-1529-2a0739b1d242"/>
-            <column name="VERSION" value="1"/>
-            <column name="USERNAME" value="senior"/>
-            <column name="PASSWORD" value="{noop}senior"/>
-            <column name="ACTIVE" valueBoolean="true"/>
-        </insert>
-
-        <insert tableName="USER_" dbms="postgresql, mssql, hsqldb">
-            <column name="ID" value="b6eab332-e1a7-af23-620c-fe3904a46bba"/>
-            <column name="VERSION" value="1"/>
-            <column name="USERNAME" value="junior"/>
-            <column name="PASSWORD" value="{noop}juniorArchive"/>
-            <column name="ACTIVE" valueBoolean="true"/>
-        </insert>
-
-        <insert tableName="USER_" dbms="postgresql, mssql, hsqldb">
-            <column name="ID" value="d24ebd67-fc8e-f6e5-f76d-eeaa3b65f989"/>
-            <column name="VERSION" value="1"/>
-            <column name="USERNAME" value="middleArchive"/>
-            <column name="PASSWORD" value="{noop}middle"/>
-            <column name="ACTIVE" valueBoolean="true"/>
-        </insert>
-
-        <insert tableName="USER_" dbms="postgresql, mssql, hsqldb">
-            <column name="ID" value="1c7eeecd-23f5-41ef-f6ab-3438097bfb9d"/>
-            <column name="VERSION" value="1"/>
-            <column name="USERNAME" value="seniorArchive"/>
-            <column name="PASSWORD" value="{noop}senior"/>
-            <column name="ACTIVE" valueBoolean="true"/>
-        </insert>
-
         <insert tableName="USER_" dbms="oracle, mysql, mariadb">
             <column name="ID" value="608859871b61424794c7dff348347f93"/>
             <column name="VERSION" value="1"/>
             <column name="USERNAME" value="admin"/>
             <column name="PASSWORD" value="{noop}admin"/>
-            <column name="ACTIVE" valueBoolean="true"/>
-        </insert>
-
-        <insert tableName="USER_" dbms="oracle, mysql, mariadb">
-            <column name="ID" value="21241ce0-b7db-abdc-ac3c-8c076083c2f0"/>
-            <column name="VERSION" value="1"/>
-            <column name="USERNAME" value="junior"/>
-            <column name="PASSWORD" value="{noop}junior"/>
-            <column name="ACTIVE" valueBoolean="true"/>
-        </insert>
-
-        <insert tableName="USER_" dbms="oracle, mysql, mariadb">
-            <column name="ID" value="40e29139-47d3-b56f-d31d-7637fe3cd202"/>
-            <column name="VERSION" value="1"/>
-            <column name="USERNAME" value="middle"/>
-            <column name="PASSWORD" value="{noop}middle"/>
-            <column name="ACTIVE" valueBoolean="true"/>
-        </insert>
-
-        <insert tableName="USER_" dbms="oracle, mysql, mariadb">
-            <column name="ID" value="7c378268-b2f7-0a3b-1529-2a0739b1d242"/>
-            <column name="VERSION" value="1"/>
-            <column name="USERNAME" value="senior"/>
-            <column name="PASSWORD" value="{noop}senior"/>
-            <column name="ACTIVE" valueBoolean="true"/>
-        </insert>
-
-        <insert tableName="USER_" dbms="oracle, mysql, mariadb">
-            <column name="ID" value="b6eab332-e1a7-af23-620c-fe3904a46bba"/>
-            <column name="VERSION" value="1"/>
-            <column name="USERNAME" value="juniorArchive"/>
-            <column name="PASSWORD" value="{noop}junior"/>
-            <column name="ACTIVE" valueBoolean="true"/>
-        </insert>
-
-        <insert tableName="USER_" dbms="oracle, mysql, mariadb">
-            <column name="ID" value="d24ebd67-fc8e-f6e5-f76d-eeaa3b65f989"/>
-            <column name="VERSION" value="1"/>
-            <column name="USERNAME" value="middleArchive"/>
-            <column name="PASSWORD" value="{noop}middle"/>
-            <column name="ACTIVE" valueBoolean="true"/>
-        </insert>
-
-        <insert tableName="USER_" dbms="oracle, mysql, mariadb">
-            <column name="ID" value="1c7eeecd-23f5-41ef-f6ab-3438097bfb9d"/>
-            <column name="VERSION" value="1"/>
-            <column name="USERNAME" value="seniorArchive"/>
-            <column name="PASSWORD" value="{noop}senior"/>
             <column name="ACTIVE" valueBoolean="true"/>
         </insert>
 
@@ -162,150 +66,6 @@
             <column name="ROLE_TYPE" value="resource"/>
         </insert>
 
-        <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="postgresql, mssql, hsqldb">
-            <column name="ID" value="21241ce0-b7db-abdc-ac3c-8c076083c2f0"/>
-            <column name="VERSION" value="1"/>
-            <column name="USERNAME" value="junior"/>
-            <column name="ROLE_CODE" value="ui-minimal"/>
-            <column name="ROLE_TYPE" value="resource"/>
-        </insert>
-
-        <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="postgresql, mssql, hsqldb">
-            <column name="ID" value="40e29139-47d3-b56f-d31d-7637fe3cd202"/>
-            <column name="VERSION" value="1"/>
-            <column name="USERNAME" value="middle"/>
-            <column name="ROLE_CODE" value="ui-minimal"/>
-            <column name="ROLE_TYPE" value="resource"/>
-        </insert>
-
-        <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="postgresql, mssql, hsqldb">
-            <column name="ID" value="7c378268-b2f7-0a3b-1529-2a0739b1d242"/>
-            <column name="VERSION" value="1"/>
-            <column name="USERNAME" value="senior"/>
-            <column name="ROLE_CODE" value="ui-minimal"/>
-            <column name="ROLE_TYPE" value="resource"/>
-        </insert>
-
-        <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="postgresql, mssql, hsqldb">
-            <column name="ID" value="b6eab332-e1a7-af23-620c-fe3904a46bba"/>
-            <column name="VERSION" value="1"/>
-            <column name="USERNAME" value="juniorArchive"/>
-            <column name="ROLE_CODE" value="ui-minimal"/>
-            <column name="ROLE_TYPE" value="resource"/>
-        </insert>
-
-        <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="postgresql, mssql, hsqldb">
-            <column name="ID" value="d24ebd67-fc8e-f6e5-f76d-eeaa3b65f989"/>
-            <column name="VERSION" value="1"/>
-            <column name="USERNAME" value="middleArchive"/>
-            <column name="ROLE_CODE" value="ui-minimal"/>
-            <column name="ROLE_TYPE" value="resource"/>
-        </insert>
-
-        <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="postgresql, mssql, hsqldb">
-            <column name="ID" value="1c7eeecd-23f5-41ef-f6ab-3438097bfb9d"/>
-            <column name="VERSION" value="1"/>
-            <column name="USERNAME" value="seniorArchive"/>
-            <column name="ROLE_CODE" value="ui-minimal"/>
-            <column name="ROLE_TYPE" value="resource"/>
-        </insert>
-
-        <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="postgresql, mssql, hsqldb">
-            <column name="ID" value="21241ce0-b7db-abdc-ac3c-8c076083c2f0"/>
-            <column name="VERSION" value="1"/>
-            <column name="USERNAME" value="junior"/>
-            <column name="ROLE_CODE" value="account-lookup"/>
-            <column name="ROLE_TYPE" value="resource"/>
-        </insert>
-
-        <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="postgresql, mssql, hsqldb">
-            <column name="ID" value="40e29139-47d3-b56f-d31d-7637fe3cd202"/>
-            <column name="VERSION" value="1"/>
-            <column name="USERNAME" value="middle"/>
-            <column name="ROLE_CODE" value="operations-editor"/>
-            <column name="ROLE_TYPE" value="resource"/>
-        </insert>
-
-        <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="postgresql, mssql, hsqldb">
-            <column name="ID" value="7c378268-b2f7-0a3b-1529-2a0739b1d242"/>
-            <column name="VERSION" value="1"/>
-            <column name="USERNAME" value="senior"/>
-            <column name="ROLE_CODE" value="account-editor"/>
-            <column name="ROLE_TYPE" value="resource"/>
-        </insert>
-
-        <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="postgresql, mssql, hsqldb">
-            <column name="ID" value="b6eab332-e1a7-af23-620c-fe3904a46bba"/>
-            <column name="VERSION" value="1"/>
-            <column name="USERNAME" value="juniorArchive"/>
-            <column name="ROLE_CODE" value="account-lookup"/>
-            <column name="ROLE_TYPE" value="resource"/>
-        </insert>
-
-        <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="postgresql, mssql, hsqldb">
-            <column name="ID" value="d24ebd67-fc8e-f6e5-f76d-eeaa3b65f989"/>
-            <column name="VERSION" value="1"/>
-            <column name="USERNAME" value="middleArchive"/>
-            <column name="ROLE_CODE" value="operations-editor"/>
-            <column name="ROLE_TYPE" value="resource"/>
-        </insert>
-
-        <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="postgresql, mssql, hsqldb">
-            <column name="ID" value="1c7eeecd-23f5-41ef-f6ab-3438097bfb9d"/>
-            <column name="VERSION" value="1"/>
-            <column name="USERNAME" value="seniorArchive"/>
-            <column name="ROLE_CODE" value="account-editor"/>
-            <column name="ROLE_TYPE" value="resource"/>
-        </insert>
-
-        <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="postgresql, mssql, hsqldb">
-            <column name="ID" value="21241ce0-b7db-abdc-ac3c-8c076083c2f0"/>
-            <column name="VERSION" value="1"/>
-            <column name="USERNAME" value="junior"/>
-            <column name="ROLE_CODE" value="archive-account-close"/>
-            <column name="ROLE_TYPE" value="row_level"/>
-        </insert>
-
-        <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="postgresql, mssql, hsqldb">
-            <column name="ID" value="40e29139-47d3-b56f-d31d-7637fe3cd202"/>
-            <column name="VERSION" value="1"/>
-            <column name="USERNAME" value="middle"/>
-            <column name="ROLE_CODE" value="archive-account-close"/>
-            <column name="ROLE_TYPE" value="row_level"/>
-        </insert>
-
-        <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="postgresql, mssql, hsqldb">
-            <column name="ID" value="7c378268-b2f7-0a3b-1529-2a0739b1d242"/>
-            <column name="VERSION" value="1"/>
-            <column name="USERNAME" value="senior"/>
-            <column name="ROLE_CODE" value="archive-account-close"/>
-            <column name="ROLE_TYPE" value="row_level"/>
-        </insert>
-
-        <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="postgresql, mssql, hsqldb">
-            <column name="ID" value="b6eab332-e1a7-af23-620c-fe3904a46bba"/>
-            <column name="VERSION" value="1"/>
-            <column name="USERNAME" value="juniorArchive"/>
-            <column name="ROLE_CODE" value="archive-account-work"/>
-            <column name="ROLE_TYPE" value="row_level"/>
-        </insert>
-
-        <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="postgresql, mssql, hsqldb">
-            <column name="ID" value="d24ebd67-fc8e-f6e5-f76d-eeaa3b65f989"/>
-            <column name="VERSION" value="1"/>
-            <column name="USERNAME" value="middleArchive"/>
-            <column name="ROLE_CODE" value="archive-account-work"/>
-            <column name="ROLE_TYPE" value="row_level"/>
-        </insert>
-
-        <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="postgresql, mssql, hsqldb">
-            <column name="ID" value="1c7eeecd-23f5-41ef-f6ab-3438097bfb9d"/>
-            <column name="VERSION" value="1"/>
-            <column name="USERNAME" value="seniorArchive"/>
-            <column name="ROLE_CODE" value="archive-account-work"/>
-            <column name="ROLE_TYPE" value="row_level"/>
-        </insert>
-
         <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="oracle, mysql, mariadb">
             <column name="ID" value="6c9e420a2b7a4c428654a9027ee14083"/>
             <column name="VERSION" value="1"/>
@@ -314,9 +74,256 @@
             <column name="ROLE_TYPE" value="resource"/>
         </insert>
 
+    </changeSet>
 
-        <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="oracle, mysql, mariadb">
+    <changeSet id="5" author="InformationBankSystem">
+
+        <insert tableName="USER_" dbms="postgresql, mssql, hsqldb">
             <column name="ID" value="21241ce0-b7db-abdc-ac3c-8c076083c2f0"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="junior"/>
+            <column name="PASSWORD" value="{noop}junior"/>
+            <column name="ACTIVE" valueBoolean="true"/>
+        </insert>
+
+        <insert tableName="USER_" dbms="postgresql, mssql, hsqldb">
+            <column name="ID" value="40e29139-47d3-b56f-d31d-7637fe3cd202"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="middle"/>
+            <column name="PASSWORD" value="{noop}middle"/>
+            <column name="ACTIVE" valueBoolean="true"/>
+        </insert>
+
+        <insert tableName="USER_" dbms="postgresql, mssql, hsqldb">
+            <column name="ID" value="7c378268-b2f7-0a3b-1529-2a0739b1d242"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="senior"/>
+            <column name="PASSWORD" value="{noop}senior"/>
+            <column name="ACTIVE" valueBoolean="true"/>
+        </insert>
+
+        <insert tableName="USER_" dbms="postgresql, mssql, hsqldb">
+            <column name="ID" value="b6eab332-e1a7-af23-620c-fe3904a46bba"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="juniorArchive"/>
+            <column name="PASSWORD" value="{noop}junior"/>
+            <column name="ACTIVE" valueBoolean="true"/>
+        </insert>
+
+        <insert tableName="USER_" dbms="postgresql, mssql, hsqldb">
+            <column name="ID" value="d24ebd67-fc8e-f6e5-f76d-eeaa3b65f989"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="middleArchive"/>
+            <column name="PASSWORD" value="{noop}middle"/>
+            <column name="ACTIVE" valueBoolean="true"/>
+        </insert>
+
+        <insert tableName="USER_" dbms="postgresql, mssql, hsqldb">
+            <column name="ID" value="1c7eeecd-23f5-41ef-f6ab-3438097bfb9d"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="seniorArchive"/>
+            <column name="PASSWORD" value="{noop}senior"/>
+            <column name="ACTIVE" valueBoolean="true"/>
+        </insert>
+
+        <insert tableName="USER_" dbms="oracle, mysql, mariadb">
+            <column name="ID" value="21241ce0b7dbabdcac3c8c076083c2f0"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="junior"/>
+            <column name="PASSWORD" value="{noop}junior"/>
+            <column name="ACTIVE" valueBoolean="true"/>
+        </insert>
+
+        <insert tableName="USER_" dbms="oracle, mysql, mariadb">
+            <column name="ID" value="40e2913947d3b56fd31d7637fe3cd202"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="middle"/>
+            <column name="PASSWORD" value="{noop}middle"/>
+            <column name="ACTIVE" valueBoolean="true"/>
+        </insert>
+
+        <insert tableName="USER_" dbms="oracle, mysql, mariadb">
+            <column name="ID" value="7c378268b2f70a3b15292a0739b1d242"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="senior"/>
+            <column name="PASSWORD" value="{noop}senior"/>
+            <column name="ACTIVE" valueBoolean="true"/>
+        </insert>
+
+        <insert tableName="USER_" dbms="oracle, mysql, mariadb">
+            <column name="ID" value="b6eab332e1a7af23620cfe3904a46bba"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="juniorArchive"/>
+            <column name="PASSWORD" value="{noop}junior"/>
+            <column name="ACTIVE" valueBoolean="true"/>
+        </insert>
+
+        <insert tableName="USER_" dbms="oracle, mysql, mariadb">
+            <column name="ID" value="d24ebd67fc8ef6e5f76deeaa3b65f989"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="middleArchive"/>
+            <column name="PASSWORD" value="{noop}middle"/>
+            <column name="ACTIVE" valueBoolean="true"/>
+        </insert>
+
+        <insert tableName="USER_" dbms="oracle, mysql, mariadb">
+            <column name="ID" value="1c7eeecd23f541eff6ab 3438097bfb9d"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="seniorArchive"/>
+            <column name="PASSWORD" value="{noop}senior"/>
+            <column name="ACTIVE" valueBoolean="true"/>
+        </insert>
+
+    </changeSet>
+
+    <changeSet id="6" author="InformationBankSystem">
+
+        <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="postgresql, mssql, hsqldb">
+            <column name="ID" value="4e936cc3-7560-4c5d-96d7-55bc112d4381"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="junior"/>
+            <column name="ROLE_CODE" value="ui-minimal"/>
+            <column name="ROLE_TYPE" value="resource"/>
+        </insert>
+
+        <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="postgresql, mssql, hsqldb">
+            <column name="ID" value="9b02271d-297d-4b7c-a781-12b2715ef9e6"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="middle"/>
+            <column name="ROLE_CODE" value="ui-minimal"/>
+            <column name="ROLE_TYPE" value="resource"/>
+        </insert>
+
+        <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="postgresql, mssql, hsqldb">
+            <column name="ID" value="a3cca9c3-4233-4fa6-8b16-915702bd44c1"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="senior"/>
+            <column name="ROLE_CODE" value="ui-minimal"/>
+            <column name="ROLE_TYPE" value="resource"/>
+        </insert>
+
+        <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="postgresql, mssql, hsqldb">
+            <column name="ID" value="1a1c95bb-e6d4-44d1-b04d-e117b546a88b"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="juniorArchive"/>
+            <column name="ROLE_CODE" value="ui-minimal"/>
+            <column name="ROLE_TYPE" value="resource"/>
+        </insert>
+
+        <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="postgresql, mssql, hsqldb">
+            <column name="ID" value="d853e2a4-e8e5-427d-923a-fa816145100d"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="middleArchive"/>
+            <column name="ROLE_CODE" value="ui-minimal"/>
+            <column name="ROLE_TYPE" value="resource"/>
+        </insert>
+
+        <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="postgresql, mssql, hsqldb">
+            <column name="ID" value="1a0ac043-d1aa-47fc-abc6-e498da64b1f1"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="seniorArchive"/>
+            <column name="ROLE_CODE" value="ui-minimal"/>
+            <column name="ROLE_TYPE" value="resource"/>
+        </insert>
+
+        <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="postgresql, mssql, hsqldb">
+            <column name="ID" value="4e936cc3-7560-4c5d-96d7-55bc112d4382"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="junior"/>
+            <column name="ROLE_CODE" value="account-lookup"/>
+            <column name="ROLE_TYPE" value="resource"/>
+        </insert>
+
+        <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="postgresql, mssql, hsqldb">
+            <column name="ID" value="9b02271d-297d-4b7c-a781-12b2715ef9e7"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="middle"/>
+            <column name="ROLE_CODE" value="operations-editor"/>
+            <column name="ROLE_TYPE" value="resource"/>
+        </insert>
+
+        <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="postgresql, mssql, hsqldb">
+            <column name="ID" value="a3cca9c3-4233-4fa6-8b16-915702bd44c2"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="senior"/>
+            <column name="ROLE_CODE" value="account-editor"/>
+            <column name="ROLE_TYPE" value="resource"/>
+        </insert>
+
+        <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="postgresql, mssql, hsqldb">
+            <column name="ID" value="1a1c95bb-e6d4-44d1-b04d-e117b546a881"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="juniorArchive"/>
+            <column name="ROLE_CODE" value="account-lookup"/>
+            <column name="ROLE_TYPE" value="resource"/>
+        </insert>
+
+        <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="postgresql, mssql, hsqldb">
+            <column name="ID" value="d853e2a4-e8e5-427d-923a-fa8161451001"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="middleArchive"/>
+            <column name="ROLE_CODE" value="operations-editor"/>
+            <column name="ROLE_TYPE" value="resource"/>
+        </insert>
+
+        <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="postgresql, mssql, hsqldb">
+            <column name="ID" value="1a0ac043-d1aa-47fc-abc6-e498da64b1f2"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="seniorArchive"/>
+            <column name="ROLE_CODE" value="account-editor"/>
+            <column name="ROLE_TYPE" value="resource"/>
+        </insert>
+
+        <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="postgresql, mssql, hsqldb">
+            <column name="ID" value="4e936cc3-7560-4c5d-96d7-55bc112d4383"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="junior"/>
+            <column name="ROLE_CODE" value="archive-account-close"/>
+            <column name="ROLE_TYPE" value="row_level"/>
+        </insert>
+
+        <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="postgresql, mssql, hsqldb">
+            <column name="ID" value="9b02271d-297d-4b7c-a781-12b2715ef9e8"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="middle"/>
+            <column name="ROLE_CODE" value="archive-account-close"/>
+            <column name="ROLE_TYPE" value="row_level"/>
+        </insert>
+
+        <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="postgresql, mssql, hsqldb">
+            <column name="ID" value="a3cca9c3-4233-4fa6-8b16-915702bd44c3"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="senior"/>
+            <column name="ROLE_CODE" value="archive-account-close"/>
+            <column name="ROLE_TYPE" value="row_level"/>
+        </insert>
+
+        <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="postgresql, mssql, hsqldb">
+            <column name="ID" value="1a1c95bb-e6d4-44d1-b04d-e117b546a882"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="juniorArchive"/>
+            <column name="ROLE_CODE" value="archive-account-work"/>
+            <column name="ROLE_TYPE" value="row_level"/>
+        </insert>
+
+        <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="postgresql, mssql, hsqldb">
+            <column name="ID" value="d853e2a4-e8e5-427d-923a-fa8161451002"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="middleArchive"/>
+            <column name="ROLE_CODE" value="archive-account-work"/>
+            <column name="ROLE_TYPE" value="row_level"/>
+        </insert>
+
+        <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="postgresql, mssql, hsqldb">
+            <column name="ID" value="1a0ac043-d1aa-47fc-abc6-e498da64b1f3"/>
+            <column name="VERSION" value="1"/>
+            <column name="USERNAME" value="seniorArchive"/>
+            <column name="ROLE_CODE" value="archive-account-work"/>
+            <column name="ROLE_TYPE" value="row_level"/>
+        </insert>
+
+       <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="oracle, mysql, mariadb">
+            <column name="ID" value="4e936cc3-7560-4c5d-96d7-55bc112d4384"/>
             <column name="VERSION" value="1"/>
             <column name="USERNAME" value="junior"/>
             <column name="ROLE_CODE" value="ui-minimal"/>
@@ -324,7 +331,7 @@
         </insert>
 
         <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="oracle, mysql, mariadb">
-            <column name="ID" value="40e29139-47d3-b56f-d31d-7637fe3cd202"/>
+            <column name="ID" value="9b02271d-297d-4b7c-a781-12b2715ef9e9"/>
             <column name="VERSION" value="1"/>
             <column name="USERNAME" value="middle"/>
             <column name="ROLE_CODE" value="ui-minimal"/>
@@ -332,7 +339,7 @@
         </insert>
 
         <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="oracle, mysql, mariadb">
-            <column name="ID" value="7c378268-b2f7-0a3b-1529-2a0739b1d242"/>
+            <column name="ID" value="a3cca9c3-4233-4fa6-8b16-915702bd44c4"/>
             <column name="VERSION" value="1"/>
             <column name="USERNAME" value="senior"/>
             <column name="ROLE_CODE" value="ui-minimal"/>
@@ -340,7 +347,7 @@
         </insert>
 
         <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="oracle, mysql, mariadb">
-            <column name="ID" value="b6eab332-e1a7-af23-620c-fe3904a46bba"/>
+            <column name="ID" value="1a1c95bb-e6d4-44d1-b04d-e117b546a883"/>
             <column name="VERSION" value="1"/>
             <column name="USERNAME" value="juniorArchive"/>
             <column name="ROLE_CODE" value="ui-minimal"/>
@@ -348,7 +355,7 @@
         </insert>
 
         <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="oracle, mysql, mariadb">
-            <column name="ID" value="d24ebd67-fc8e-f6e5-f76d-eeaa3b65f989"/>
+            <column name="ID" value="d853e2a4-e8e5-427d-923a-fa8161451003"/>
             <column name="VERSION" value="1"/>
             <column name="USERNAME" value="middleArchive"/>
             <column name="ROLE_CODE" value="ui-minimal"/>
@@ -356,7 +363,7 @@
         </insert>
 
         <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="oracle, mysql, mariadb">
-            <column name="ID" value="1c7eeecd-23f5-41ef-f6ab-3438097bfb9d"/>
+            <column name="ID" value="1a0ac043-d1aa-47fc-abc6-e498da64b1f4"/>
             <column name="VERSION" value="1"/>
             <column name="USERNAME" value="seniorArchive"/>
             <column name="ROLE_CODE" value="ui-minimal"/>
@@ -364,7 +371,7 @@
         </insert>
 
         <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="oracle, mysql, mariadb">
-            <column name="ID" value="21241ce0-b7db-abdc-ac3c-8c076083c2f0"/>
+            <column name="ID" value="4e936cc3-7560-4c5d-96d7-55bc112d4385"/>
             <column name="VERSION" value="1"/>
             <column name="USERNAME" value="junior"/>
             <column name="ROLE_CODE" value="account-lookup"/>
@@ -372,7 +379,7 @@
         </insert>
 
         <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="oracle, mysql, mariadb">
-            <column name="ID" value="40e29139-47d3-b56f-d31d-7637fe3cd202"/>
+            <column name="ID" value="9b02271d-297d-4b7c-a781-12b2715ef9e0"/>
             <column name="VERSION" value="1"/>
             <column name="USERNAME" value="middle"/>
             <column name="ROLE_CODE" value="operations-editor"/>
@@ -380,7 +387,7 @@
         </insert>
 
         <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="oracle, mysql, mariadb">
-            <column name="ID" value="7c378268-b2f7-0a3b-1529-2a0739b1d242"/>
+            <column name="ID" value="a3cca9c3-4233-4fa6-8b16-915702bd44c5"/>
             <column name="VERSION" value="1"/>
             <column name="USERNAME" value="senior"/>
             <column name="ROLE_CODE" value="account-editor"/>
@@ -388,7 +395,7 @@
         </insert>
 
         <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="oracle, mysql, mariadb">
-            <column name="ID" value="b6eab332-e1a7-af23-620c-fe3904a46bba"/>
+            <column name="ID" value="1a1c95bb-e6d4-44d1-b04d-e117b546a884"/>
             <column name="VERSION" value="1"/>
             <column name="USERNAME" value="juniorArchive"/>
             <column name="ROLE_CODE" value="account-lookup"/>
@@ -396,7 +403,7 @@
         </insert>
 
         <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="oracle, mysql, mariadb">
-            <column name="ID" value="d24ebd67-fc8e-f6e5-f76d-eeaa3b65f989"/>
+            <column name="ID" value="d853e2a4-e8e5-427d-923a-fa8161451004"/>
             <column name="VERSION" value="1"/>
             <column name="USERNAME" value="middleArchive"/>
             <column name="ROLE_CODE" value="operations-editor"/>
@@ -404,7 +411,7 @@
         </insert>
 
         <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="oracle, mysql, mariadb">
-            <column name="ID" value="1c7eeecd-23f5-41ef-f6ab-3438097bfb9d"/>
+            <column name="ID" value="1a0ac043-d1aa-47fc-abc6-e498da64b1f5"/>
             <column name="VERSION" value="1"/>
             <column name="USERNAME" value="seniorArchive"/>
             <column name="ROLE_CODE" value="account-editor"/>
@@ -412,7 +419,7 @@
         </insert>
 
         <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="oracle, mysql, mariadb">
-            <column name="ID" value="21241ce0-b7db-abdc-ac3c-8c076083c2f0"/>
+            <column name="ID" value="4e936cc3-7560-4c5d-96d7-55bc112d4386"/>
             <column name="VERSION" value="1"/>
             <column name="USERNAME" value="junior"/>
             <column name="ROLE_CODE" value="archive-account-close"/>
@@ -420,7 +427,7 @@
         </insert>
 
         <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="oracle, mysql, mariadb">
-            <column name="ID" value="40e29139-47d3-b56f-d31d-7637fe3cd202"/>
+            <column name="ID" value="9b02271d-297d-4b7c-a781-12b2715ef9e61"/>
             <column name="VERSION" value="1"/>
             <column name="USERNAME" value="middle"/>
             <column name="ROLE_CODE" value="archive-account-close"/>
@@ -428,7 +435,7 @@
         </insert>
 
         <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="oracle, mysql, mariadb">
-            <column name="ID" value="7c378268-b2f7-0a3b-1529-2a0739b1d242"/>
+            <column name="ID" value="a3cca9c3-4233-4fa6-8b16-915702bd44c6"/>
             <column name="VERSION" value="1"/>
             <column name="USERNAME" value="senior"/>
             <column name="ROLE_CODE" value="archive-account-close"/>
@@ -436,7 +443,7 @@
         </insert>
 
         <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="oracle, mysql, mariadb">
-            <column name="ID" value="b6eab332-e1a7-af23-620c-fe3904a46bba"/>
+            <column name="ID" value="1a1c95bb-e6d4-44d1-b04d-e117b546a885"/>
             <column name="VERSION" value="1"/>
             <column name="USERNAME" value="juniorArchive"/>
             <column name="ROLE_CODE" value="archive-account-work"/>
@@ -444,7 +451,7 @@
         </insert>
 
         <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="oracle, mysql, mariadb">
-            <column name="ID" value="d24ebd67-fc8e-f6e5-f76d-eeaa3b65f989"/>
+            <column name="ID" value="d853e2a4-e8e5-427d-923a-fa8161451005"/>
             <column name="VERSION" value="1"/>
             <column name="USERNAME" value="middleArchive"/>
             <column name="ROLE_CODE" value="archive-account-work"/>
@@ -452,7 +459,7 @@
         </insert>
 
         <insert tableName="SEC_ROLE_ASSIGNMENT" dbms="oracle, mysql, mariadb">
-            <column name="ID" value="1c7eeecd-23f5-41ef-f6ab-3438097bfb9d"/>
+            <column name="ID" value="1a0ac043-d1aa-47fc-abc6-e498da64b1f6"/>
             <column name="VERSION" value="1"/>
             <column name="USERNAME" value="seniorArchive"/>
             <column name="ROLE_CODE" value="archive-account-work"/>
