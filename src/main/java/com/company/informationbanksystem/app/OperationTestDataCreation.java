@@ -41,22 +41,23 @@ public class OperationTestDataCreation {
 
     void createAccounts() {
         for(int i = 0 ; i < 50; i++){
-//            Account account = dataManager.create(Account.class);
-//            account.setArchive(randomArchive());
-//            account.setCurrency(randomCurrency());
-//            account.setFunds((double) 0);
-//            account.setName(Integer.toString(i+1));
+            Account account = dataManager.create(Account.class);
+            account.setArchive(randomArchive());
+            account.setCurrency(randomCurrency());
+            account.setFunds((double) 0);
+            account.setName(Integer.toString(i+1));
 
-            Operation operation = dataManager.create(Operation.class);
-            //operation.setAccount(account);
-            operation.setDate(new Date());
-            operation.setSum(random().nextLong());
-            operation.setCategory(randomCategory());
-            operation.setType(randomType());
+            dataManager.save(account);
+            for(int j = 0; j< i; j++){
+                Operation operation = dataManager.create(Operation.class);
+                operation.setAccount(account);
+                operation.setDate(new Date());
+                operation.setSum((long) (Math.random() * 10000L));
+                operation.setCategory(randomCategory());
+                operation.setType(randomType());
 
-            dataManager.save(operation);
-
-            //dataManager.save(account);
+                dataManager.save(operation);
+            }
         }
     }
 
